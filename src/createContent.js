@@ -13,4 +13,4 @@ const setUpPage = () => {
   content.appendChild(text);
 }
 
-export {setUpPage};
+export default setUpPage;
