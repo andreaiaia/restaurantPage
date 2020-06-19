@@ -2,7 +2,7 @@ const setUpPage = () => {
   const content = document.getElementById('content');
 
   const logo = document.createElement("img");
-  logo.src = "../img/logo.png";
+  logo.src = "img/logo.png";
   logo.classList.add('logo');
 
   const headline = document.createElement("h1");
