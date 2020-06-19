@@ -1,17 +1,19 @@
-const thirdTab = () => {
+const firstTab = () => {
   const container = document.querySelector('.container');
-
-  const tab = document.createElement('div');
-  tab.style.margin = 'auto';
+  const tabs = document.querySelector('.tabs');
 
   const title = document.createElement('h3');
-  title.textContent = 'tab 3';
+  title.textContent = 'Reservation';
+  title.classList.add('tab');
+  title.classList.add('tab3');
+
   const text = document.createElement('p');
-  text.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, veritatis porro in saepe quasi nobis animi molestiae deleniti sit rerum facere nihil doloremque adipisci ipsum reprehenderit ut laboriosam quod ducimus.'
-  
-  tab.appendChild(title);
-  tab.appendChild(text);
-  container.appendChild(tab);
+  text.textContent = 'Per prenotare chiamare il numero 555-555555'
+  text.classList.add('text');
+  text.classList.add('tab3Text');
+
+  tabs.appendChild(title);
+  container.appendChild(text);
 }
 
-export default thirdTab;
+export default firstTab;

@@ -1,18 +1,19 @@
-const secondTab = () => {
+const firstTab = () => {
   const container = document.querySelector('.container');
-
-  const tab = document.createElement('div');
-  tab.style.margin = 'auto';
+  const tabs = document.querySelector('.tabs');
 
   const title = document.createElement('h3');
-  title.textContent = 'tab 2';
+  title.textContent = 'Location';
+  title.classList.add('tab');
+  title.classList.add('tab2');
+
   const text = document.createElement('p');
-  text.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, veritatis porro in saepe quasi nobis animi molestiae deleniti sit rerum facere nihil doloremque adipisci ipsum reprehenderit ut laboriosam quod ducimus.'
-  
-  tab.appendChild(title);
-  tab.appendChild(text);
-  
-  container.appendChild(tab);
+  text.textContent = "Matera è città capoluogo di Provincia della Basilicata, una regione dell’Italia del Sud. Si trova al margine orientale in prossimità della regione Puglia e sorge sull’altipiano della Murgia che caratterizza il paesaggio di quest’area fino alle coste del Mar Adriatico. Matera è una città dalle origini molto antiche con una storia millenaria unica e affascinante. I principali luoghi di interesso sono i Sassi di Matera, il centro storico e il Parco delle Chiese Rupestri. Matera è conosciuta in tutto il mondo per i Sassi, gli antichi rioni della città dichiarati nel 1993 dall’UNESCO Patrimonio dell’Umanità. A questo si aggiunge il riconoscimento conseguito il 17 Ottobre 2014 con il quale Matera è stata designata Capitale Europea della Cultura per il 2019."
+  text.classList.add('text');
+  text.classList.add('tab2Text');
+
+  tabs.appendChild(title);
+  container.appendChild(text);
 }
 
-export default secondTab;
+export default firstTab;

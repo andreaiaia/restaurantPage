@@ -1,0 +1,50 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+}
+body {
+  background-color: rgba(233, 215, 155, 0.8);
+}
+h1 {
+  text-align: center;
+}
+
+.baseline {
+  text-align: center;
+}
+.logo {
+  width: 300px;
+  display: block;
+  margin: auto;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  margin-top: 3rem;
+  border: 2px solid black;
+}
+.tabs {
+  margin: 0 35% 0 0;
+  display: flex;
+  justify-content: center;
+}
+.tab {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  border-right: 2px solid black;
+}
+.text {
+  border-top: 2px solid black;
+  padding: 10px;
+  margin: 0;
+  background-color: rgb(226, 199, 110);
+
+}
+.active {
+  background-color: rgb(226, 199, 110);
+}
+.inactive {
+  display: none;
+}
